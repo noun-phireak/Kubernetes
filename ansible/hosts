@@ -1,0 +1,13 @@
+[local]
+locahost ansible_connection=local
+
+[controlplane]
+your controlplane ip
+
+[cluster]
+your cluster ip
+
+
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3

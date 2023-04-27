@@ -1,0 +1,13 @@
+---
+- name: block for configuring kubernetes controplane
+  block:
+    - name: initialized cluster
+      shell: >
+        kubeadm init --apiserver-advertise-address=10.104.0.3  --pod-network-cidr=192.168.0.0/16 --ignore-preflight-errors=all
+
+    - name: Copy kubeconfig file
+      copy:
+        src: /etc/kubernetes/admin.conf
+        dest: ~/.kube/config
+        remote_src: yes
+  delegate_to: controlplane
