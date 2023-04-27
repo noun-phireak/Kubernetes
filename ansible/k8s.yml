@@ -1,0 +1,8 @@
+---
+# k8 configuration
+- hosts: cluster
+  become: yes
+  gather_facts: no
+  any_errors_fatal: no
+  roles:
+    - k8s
