@@ -1,14 +1,18 @@
 ## Configured your Kubernetes Cluster with Kubadm
 ### Ansible installation on Ubuntun
-* update pakages
+
 ``` bash
+# update packages
+
 $ sudo apt update 
-```
-* install ansible
-``` bash
+
+# install ansible
+
 $ sudo apt install ansible 
-```
-* check ansible version
-``` bash
+
+# check ansible version
+
 $ ansible --version 
+
 ```
+
