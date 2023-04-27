@@ -1,5 +1,5 @@
 ## Configured your Kubernetes Cluster with Kubadm
-### Ansible installation on Ubuntun
+### Ansible installation on Ubuntu
 
 ``` bash
 # update packages
